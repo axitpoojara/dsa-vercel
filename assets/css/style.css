@@ -43,7 +43,8 @@
 /* ******************************
 :: 1.0 WEB FONTS
 ****************************** */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&family=Roboto:wght@300;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700;900&family=Ubuntu:wght@300;400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
 
 /* ******************************
 :: 2.0 IMPORT ALL CSS
@@ -65,7 +66,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu';
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -127,7 +128,7 @@ h6 {
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu';
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -825,7 +826,7 @@ img {
 }
 
 .preloader-animation .loader {
-    font: bold 5em "Roboto", sans-serif;
+    font: bold 5em 'Ubuntu';
     text-align: center;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -887,7 +888,7 @@ img {
 }
 
 .digimax-preloader p {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Ubuntu';
     letter-spacing: 8px;
     color: #3b3b3b;
 }
@@ -981,7 +982,7 @@ img {
     }
 
     .preloader-animation .loader {
-        font: bold 3.5em "Roboto", sans-serif;
+        font: bold 3.5em "Ubuntu";
     }
 }
 
@@ -992,7 +993,7 @@ img {
     }
 
     .preloader-animation .loader {
-        font: bold 2em "Roboto", sans-serif;
+        font: bold 2em "Ubuntu";
     }
 }
 
@@ -1085,7 +1086,7 @@ header {
 }
 
 .navbar-width {
-    max-width: 1300px !important;
+    max-width: 1340px !important;
 }
 
 .navbar-expand .navbar-nav.toggle {
@@ -1419,7 +1420,7 @@ header {
   @media screen and (max-width: 768px) {
     .contact-info {
       flex: 1 1 45%; /* Adjust flex for smaller screens */
-      max-width: 45%;
+      max-width: 58%;
     }
 
     .contact-info img {
