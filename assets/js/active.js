@@ -95,10 +95,10 @@
         }
     });
 
-    $window.on('scroll', function () {
-        $('.navbar-sticky').toggleClass('hide', $(window).scrollTop() > zero);
-        zero = $(window).scrollTop();
-    });
+    // $window.on('scroll', function () {
+    //     $('.navbar-sticky').toggleClass('hide', $(window).scrollTop() > zero);
+    //     zero = $(window).scrollTop();
+    // });
 
     // :: 4.0 SCROLL TO TOP ACTIVE CODE
     var offset = 300;
