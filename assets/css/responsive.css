@@ -216,7 +216,7 @@
     }
     
     .tm-25{margin-top: 44px!important;}
-    .tm-50{margin-top: 50px!important;}
+    /* .tm-50{margin-top: 50px!important;} */
 
     .menu .dropdown .dropdown-menu .nav-item .nav-link {
         font-size: 1.3rem;       
@@ -227,9 +227,9 @@
     p {   
         font-size: 16px;    
     }
-    .navbar-sticky{
+    /* .navbar-sticky{
         top:40px;
-    }
+    } */
     .single-content-list span {
       font-size: 16px;
     }
