@@ -243,3 +243,7 @@
     });    
 
 }(jQuery));
+
+function openCalendly() {
+    window.open('https://calendly.com/dsadvisor-in/30min?month=2024-12', '_blank');
+}
