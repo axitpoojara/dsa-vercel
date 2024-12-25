@@ -589,7 +589,7 @@ img {
 }
 
 .bg-overlay::after {
-    opacity: 0.45;
+    /* opacity: 0.45; */
     z-index: -1;
 }
 
@@ -1008,7 +1008,7 @@ img {
     width: 50px;
     line-height: 45px;
     border-radius: 50%;
-    background-color: #191919;
+    background-color: #007684;
     text-align: center;
     cursor: pointer;
     z-index: 500;
@@ -1413,7 +1413,7 @@ header {
   }
 
   .contact-info h4, .contact-info h5, .contact-info span {
-    margin: 10px 0;
+    margin: 5px 0;
   }
 
   /* Media query for tablets (screen width less than 768px) */
@@ -1559,7 +1559,8 @@ header {
 .homepage-4 .btn.btn-bordered-white::after,
 .homepage-4 .bg-overlay::after,
 .homepage-4 .grad-hover::before {
-    background: linear-gradient(55deg, #B7B78A 15%, #658864 65%);
+    /* background: linear-gradient(55deg, #B7B78A 15%, #658864 65%); */
+    background: #007684;
 }
 
 /* ******************************
@@ -1978,7 +1979,8 @@ body.dark,
     font-weight: 600;
     line-height: 1.2em;
     letter-spacing: 0px;
-    color: #B7B78A;
+    /* color: #B7B78A; */
+    color: #fff;
     padding-bottom: 1.2rem
 }
 
@@ -3255,7 +3257,8 @@ padding-left: 12px!important;
   color: #fff;
   line-height: 33px;
   font-size: 15px;
-  background: rgb(156 167 125);
+  /* background: rgb(156 167 125); */
+  background-color: #007684 !important;
   border: 1px solid #CCC;
 }
 .accordion-bral .ac-label:hover {
@@ -3270,7 +3273,8 @@ padding-left: 12px!important;
 }
 .accordion-bral input:checked + .ac-label,
 .accordion-bral input:checked + .ac-label:active {
-  background-color: rgb(156 167 125) !important;
+  /* background-color: rgb(156 167 125) !important; */
+  background-color: #007684 !important;
   color: #FFF;
   box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3), 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
@@ -3565,4 +3569,8 @@ hr {
 
 #float_text img {
     max-width: 70% !important;
+}
+
+.bg_primary_color{
+    background-color: #007684 !important;
 }
