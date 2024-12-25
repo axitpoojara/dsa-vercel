@@ -1310,7 +1310,8 @@ header {
 :: 8.0 WELCOME AREA CSS
 ****************************** */
 .welcome-area {
-    height: 650px;
+    /* height: 650px; */
+    height: 100vh;
     z-index: 1;
 }
 
