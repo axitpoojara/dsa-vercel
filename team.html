@@ -216,9 +216,9 @@
         <!-- ***** Breadcrumb Area End ***** -->
 
        <!-- ***** About Area Start ***** -->
-        <section class="section about-area pt-50">
+        <section class="section about-area pt-50 pb-50">
             <div class="container">
-                                <div class="admin media py-4 min-height-285 team-description" style="display: flex; align-items: center;">
+                                <div class="admin media py-4 min-height-285 team-description mb-3" style="display: flex; align-items: center;">
                                     <!-- Admin Thumb -->
                                     <div class="admin-thumb avatar-lg">
                                         <img src="assets/img/ca1.jpg" alt="">
@@ -241,7 +241,7 @@
                                     </div>
                                 </div>
 
-                                <div class="admin media py-4 min-height-285 team-description" style="display: flex; align-items: center;">
+                                <div class="admin media py-4 min-height-285 team-description mb-3" style="display: flex; align-items: center;">
                                     <!-- Admin Thumb -->
                                     <div class="admin-thumb avatar-lg">
                                         <img src="assets/img/ca2.jpg" alt="">
@@ -258,7 +258,7 @@
                                     </div>
                                 </div>
 
-                                <div class="admin media py-4 min-height-285 team-description" style="display: flex; align-items: center;">
+                                <div class="admin media py-4 min-height-285 team-description mb-3" style="display: flex; align-items: center;">
                                     <!-- Admin Thumb -->
                                     <div class="admin-thumb avatar-lg">
                                         <img src="assets/img/ca3.jpg" alt="">
@@ -275,7 +275,7 @@
                                     </div>
                                 </div>
 
-                                <div class="admin media py-4 min-height-285 team-description" style="display: flex; align-items: center;">
+                                <div class="admin media py-4 min-height-285 team-description mb-3" style="display: flex; align-items: center;">
                                     <!-- Admin Thumb -->
                                     <div class="admin-thumb avatar-lg">
                                         <img src="assets/img/ca4.jpg" alt="">
@@ -291,7 +291,7 @@
                                     </div>
                                 </div>
 
-                                <div class="admin media py-4 min-height-285 team-description" style="display: flex; align-items: center;">
+                                <div class="admin media py-4 min-height-285 team-description mb-3" style="display: flex; align-items: center;">
                                     <!-- Admin Thumb -->
                                     <div class="admin-thumb avatar-lg">
                                         <img src="assets/img/ca7.jpg" alt="">
@@ -310,7 +310,7 @@
                                     </div>
                                 </div>
 
-                                <div class="admin media py-4 min-height-285 team-description" style="display: flex; align-items: center;">
+                                <div class="admin media py-4 min-height-285 team-description mb-3" style="display: flex; align-items: center;">
                                     <!-- Admin Thumb -->
                                     <div class="admin-thumb avatar-lg">
                                         <img src="assets/img/ca9.jpg" alt="">
@@ -448,11 +448,19 @@
             </div>
         </footer>
         <!--====== Footer Area End ======-->
+        <div id="float_text">
+            <a href="https://api.whatsapp.com/send?phone=918141993182&text=Hi%21%20How%20can%20I%20help%20you%3F." target="_blank"><img src="assets/img/india_flag_icon.png" alt=""></a>
+            <a href="https://api.whatsapp.com/send?phone=12504137753&text=Hi%21%20How%20can%20I%20help%20you%3F." target="_blank"><img src="assets/img/canada_flag_icon.png" alt=""></a>
+            <a href="https://api.whatsapp.com/send?phone=61435129519&text=Hi%21%20How%20can%20I%20help%20you%3F." target="_blank"><img src="assets/img/australia_flag_icon.png" alt=""></a>
+            <a href="https://api.whatsapp.com/send?phone=16042508096&text=Hi%21%20How%20can%20I%20help%20you%3F." target="_blank"><img src="assets/img/usa_flag_icon.png" alt=""></a>
+        </div>
 
-        <a href="https://api.whatsapp.com/send?phone=81419 93182&text=Hi%21%20How can i help you?." class="float" target="_blank">
-        <img src="assets/img/whatsapp.png">
+        <a class="float">
+            <img src="assets/img/whatsapp.png" onclick="toggleDiv()">
         </a>
     </div>
+
+
 
     <!--====== Modal Responsive Menu Area Start ======-->
         <div id="menu" class="modal fade p-0">
@@ -502,6 +510,9 @@ function getYear() {
   window.onload = function() {
       window.scrollTo(0, 0);
     };
+
+    
+
 </script>
 <script type="text/javascript"
 src="https://www.statcounter.com/counter/counter.js"

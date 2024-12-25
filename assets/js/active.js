@@ -247,3 +247,13 @@
 function openCalendly() {
     window.open('https://calendly.com/dsadvisor-in/30min?month=2024-12', '_blank');
 }
+
+function toggleDiv() {
+    const myDiv = document.getElementById('float_text');
+    // Toggle the display property
+    if (myDiv.style.display === 'none' || myDiv.style.display === '') {
+      myDiv.style.display = 'block';
+    } else {
+      myDiv.style.display = 'none';
+    }
+  }

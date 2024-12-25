@@ -1002,8 +1002,8 @@ img {
 ****************************** */
 #scrollUp {
     position: fixed;
-    right: 2%;
-    bottom: 3%;
+    right: 1.5%;
+    bottom: 2%;
     height: 50px;
     width: 50px;
     line-height: 45px;
@@ -3164,6 +3164,7 @@ padding-left: 12px!important;
     text-align:center;
     font-size:30px;
     box-shadow: 2px 2px 3px #999;
+    cursor: pointer;
   z-index:100;
 }
 
@@ -3545,3 +3546,23 @@ hr {
 
 .carousel-indicators{bottom: 9%;}
 .carousel-control-next, .carousel-control-prev {width: 20%!important;}
+
+#float_text{
+    width: 85px;
+    height: 235px;
+    position:fixed;   
+    bottom:140px;
+    right:36px;
+    background-color:#FFF;
+    display: none;
+    color:#FFF;
+    border-radius:5px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+#float_text img {
+    max-width: 70% !important;
+}
