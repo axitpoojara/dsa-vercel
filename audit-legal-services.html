@@ -215,16 +215,16 @@
         <section id="blog" class="section blog-area ptb_50">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-3 bg-grey">
+                    <!-- <div class="col-12 col-lg-3 bg-grey">
                         <aside class="sidebar mb-5 mb-lg-0">
                            
                             <div class="single-widget">
-                                <!-- Category Widget -->
+
                                 <div class="widget catagory-widget">
                                     <h5 class="text-uppercase d-block py-3">Our Services</h5>
-                                    <!-- Category Widget Content -->
+ 
                                     <div class="widget-content">
-                                        <!-- Category Widget Items -->
+
                                         <ul class="widget-items">
                                             <li><a href="bookkeeping-outsourcing.html" class="d-flex" title="Outsourcing"><span>Outsourcing</span></a></li>
                                             <li><a href="audit-legal-services.html" class="d-flex" title="Audit and Assurance"><span>Audit and Assurance</span></a></li>
@@ -240,7 +240,12 @@
                             </div>
                        
                         </aside>
+                    </div> -->
+
+                    <div class="col-12 col-lg-3 bg-grey">
+                        <div id="sideNavbarServices"></div>
                     </div>
+                    
                     <div class="col-12 col-lg-9">
                         <!-- Single Blog Details -->
                         <article class="single-blog-details">
@@ -473,6 +478,7 @@ https://www.dsadvisor.in -->
 <script> 
     $(function(){
       $("#footer").load("footer.html"); 
+      $("#sideNavbarServices").load("leftNavBarServices.html");
     });
     </script>
 <script type="text/javascript">
