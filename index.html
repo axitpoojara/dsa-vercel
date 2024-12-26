@@ -102,7 +102,7 @@
                 </div>
             </div> -->
             <!-- Navbar -->
-            <nav data-aos="zoom-out" data-aos-delay="800" class="navbar navbar-expand tm-25">
+            <nav data-aos="zoom-out" data-aos-delay="800" class="navbar navbar-expand ">
                 <div class="container header navbar-width">
                     <!-- Navbar Brand-->
                     <a class="navbar-brand" href="index.html">
@@ -194,7 +194,7 @@
 
 
         <!-- ***** Welcome Area Start ***** -->
-        <section id="home" class="section welcome-area bg-overlay overflow-hidden d-flex align-items-center">
+        <section id="home" class="section welcome-area overflow-hidden d-flex align-items-center">
 
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
               <ol class="carousel-indicators">
@@ -462,7 +462,7 @@ The guiding philosophy of the firm is YOU GROW – WE GROW. We, at DSA believe i
                                 <a href="bookkeeping-outsourcing.html"><img src="assets/img/accouting.jpg" alt="OUTSOURCING"></a>
                             </div>
                             <!-- Service Content -->
-                            <div class="service-content bg-grey ">
+                            <div class="service-content bg_primary_color ">
                                <a href="bookkeeping-outsourcing.html" title="OUTSOURCING"><h3>OUTSOURCING</h3></a>
                             </div>
                         </div>
@@ -475,7 +475,7 @@ The guiding philosophy of the firm is YOU GROW – WE GROW. We, at DSA believe i
                                 <a href="audit-legal-services.html"><img src="assets/img/legal.jpg" alt="AUDIT AND ASSURANCE"></a>
                             </div>
                             <!-- Service Content -->
-                            <div class="service-content bg-grey ">                                
+                            <div class="service-content bg_primary_color ">                                
                                     <a href="audit-legal-services.html" title="AUDIT AND ASSURANCE"><h3>AUDIT AND ASSURANCE</h3></a>
                             </div>
                         </div>
@@ -489,7 +489,7 @@ The guiding philosophy of the firm is YOU GROW – WE GROW. We, at DSA believe i
                                 <a href="valuation-financial-assets.html"><img src="assets/img/valuation.jpg" alt="VALUATION"></a>
                             </div>
                             <!-- Service Content -->
-                            <div class="service-content bg-grey ">                                
+                            <div class="service-content bg_primary_color ">                                
                                     <a href="valuation-financial-assets.html" title="VALUATION"><h3>VALUATION</h3></a>
                             </div>
                         </div>
@@ -502,7 +502,7 @@ The guiding philosophy of the firm is YOU GROW – WE GROW. We, at DSA believe i
                                 <a href="direct-indirect-tax-services.html"><img src="assets/img/tax.jpg" alt="TAXATION CONSULTANCY"></a>
                             </div>
                             <!-- Service Content -->
-                            <div class="service-content bg-grey ">                                
+                            <div class="service-content bg_primary_color ">                                
                                   <a href="direct-indirect-tax-services.html" title="TAXATION CONSULTANCY"><h3>TAXATION<br>CONSULTANCY</h3> </a>
                             </div>
                         </div>
@@ -515,7 +515,7 @@ The guiding philosophy of the firm is YOU GROW – WE GROW. We, at DSA believe i
                                 <a href="due-dilligence-legal.html"><img src="assets/img/consultancy.jpg" alt="DUE DILLIGENCE, LEGAL AND COMPLIANCE"></a>
                             </div>
                             <!-- Service Content -->
-                            <div class="service-content bg-grey ">
+                            <div class="service-content bg_primary_color ">
                                 
                                     <a href="due-dilligence-legal.html" title="DUE DILLIGENCE, LEGAL AND COMPLIANCE"><h3>DUE DILLIGENCE, LEGAL AND COMPLIANCE</h3></a>
                             </div>
@@ -530,7 +530,7 @@ The guiding philosophy of the firm is YOU GROW – WE GROW. We, at DSA believe i
                                 <a href="finance- investment-advisory.html"><img src="assets/img/outsource.jpg" alt="FINANCE & INVESTMENT ADVISORY"></a>
                             </div>
                             <!-- Service Content -->
-                            <div class="service-content bg-grey ">
+                            <div class="service-content bg_primary_color ">
                                 
                                     <a href="finance- investment-advisory.html" title="FINANCE & INVESTMENT ADVISORY"><h3>FINANCE & INVESTMENT ADVISORY</h3></a>
                             </div>
@@ -1029,23 +1029,33 @@ function showSlides() {
   }
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
+  if(slides[slideIndex-1])slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 } 
+
+function loadHTML(file, elementId) {
+  fetch(file)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`Failed to load ${file}: ${response.statusText}`);
+      }
+      return response.text();
+    })
+    .then((data) => {
+      document.getElementById(elementId).innerHTML = data;
+    })
+    .catch((error) => {
+      console.error(`Error loading ${file}:`, error);
+    });
+}
+
+// Load header and footer
+loadHTML('footer.html', 'footer');
     </script>    
 
     <!-- Default Statcounter code for DSAdvisor.in
 https://www.dsadvisor.in -->
-<script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-</script>
-<script> 
-    $(function(){
-      $("#footer").load("footer.html"); 
-    });
-    </script>
+
 <script type="text/javascript">
 var sc_project=12853171; 
 var sc_invisible=1; 
@@ -1054,12 +1064,15 @@ var sc_security="b8794860";
 <script type="text/javascript"
 src="https://www.statcounter.com/counter/counter.js"
 async></script>
+
+
 <noscript><div class="statcounter"><a title="Web Analytics"
 href="https://statcounter.com/" target="_blank"><img
 class="statcounter"
 src="https://c.statcounter.com/12853171/0/b8794860/1/"
 alt="Web Analytics"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+
 <!-- End of Statcounter Code -->
 </body>
 

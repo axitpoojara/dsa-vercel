@@ -354,7 +354,7 @@
 @media (max-width: 767px) {
     .welcome-area {
         height: 100% !important;
-        padding-top: 90px;
+        /* padding-top: 90px; */
     }
 
     .welcome-intro {
