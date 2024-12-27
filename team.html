@@ -138,19 +138,16 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="overseas-services.html">Overseas Services <i class="fas fa-angle-down ml-1"></i></a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="outsourcing.html" class="nav-link" title="Outsourcing">Outsourcing</a></li>
+                                <li class="nav-item"><a href="outsourcing.html" class="nav-link">Outsourcing</a></li> 
                                 <li class="nav-item"><a href="global-business-expansion.html" class="nav-link"><span>Global Business Expansion</span></a></li>
-                                <li class="nav-item nav-link">Accouting Outsourcing Services</li>
-                                <li class="nav-item nav-link">Bookkeeping Services</li>
-                                <li class="nav-item nav-link">Outsourced Tax Preparation</li>
-                                <li class="nav-item nav-link">Management Reporting</li>
-                                <li class="nav-item nav-link">AR & AP Management</li>
-                                <li class="nav-item nav-link">Inventory Management</li>
-                                <li class="nav-item nav-link">Control Account Reconciliation</li>
-                                <li class="nav-item nav-link">Preparation of Financial Statements</li>
-                                <li class="nav-item nav-link">Payroll Management</li>
-                                <li class="nav-item nav-link">Cloud Staffing Solution</li>
-                                <li class="nav-item nav-link">Fixed assets and depreciation accounting</li>
+                                <li class="nav-item"><a href="bookkeeping-services.html" class="nav-link">Bookkeeping Service</a></li>
+                                <li class="nav-item"><a href="tax-preparation.html" class="nav-link">Tax Preparation</a></li>
+                                <li class="nav-item"><a href="management-reporting.html" class="nav-link">Management Reporting</a></li>
+                                <li class="nav-item"><a href="AR-AP-management.html" class="nav-link">AR AP Management</a></li>
+                                <li class="nav-item"><a href="control-account-reconciliation.html" class="nav-link">Control Account Reconciliation</a></li>
+                                <li class="nav-item"><a href="preparation-of-financial-statements.html" class="nav-link">Preparation Of Financial Assets</a></li>
+                                <li class="nav-item"><a href="payroll-management.html" class="nav-link">Payroll Management</a></li>
+                                <li class="nav-item"><a href="cloud-staffing-solution.html" class="nav-link">Cloud Staffing Solution</a></li>
                                 <li class="nav-item nav-link">Budgeting , implementation & Monitoring , MIS</li>
 
                             </ul>
@@ -482,16 +479,7 @@
     });
 }
 
-function getYear() {
-  const currentYear = new Date().getFullYear();
-  const yearElement = document.getElementById("current-year");
-  if (yearElement) {
-    yearElement.textContent = currentYear;
-    console.log(`Current Year Updated: ${currentYear}`);
-  } else {
-    console.error("Element with ID 'current-year' not found.");
-  }
-}
+
 
 // Load header and footer
 loadHTML('footer.html', 'footer' , getYear);

@@ -256,4 +256,15 @@ function toggleDiv() {
     } else {
       myDiv.style.display = 'none';
     }
-  }
+}
+
+function getYear() {
+    const currentYear = new Date().getFullYear();
+    const yearElement = document.getElementById("current-year");
+    if (yearElement) {
+        yearElement.textContent = currentYear;
+        console.log(`Current Year Updated: ${currentYear}`);
+    } else {
+        console.error("Element with ID 'current-year' not found.");
+    }
+}

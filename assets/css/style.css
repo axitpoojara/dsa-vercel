@@ -3584,6 +3584,12 @@ hr {
     margin-left: 0px !important;
 }
 
+.image_size{
+    object-fit: cover !important;
+    height: 264px !important;
+    width: 500px !important;
+}
+
 
 /*Team Page CSS Start*/
 .responsive-cell-block {
