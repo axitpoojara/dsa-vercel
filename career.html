@@ -163,12 +163,7 @@
                    
                     </ul>
                     <!-- Navbar Icons -->
-                    <ul class="navbar-nav icons">                     
-                        
-                        <li class="nav-item social">
-                            <a href="#" class="nav-link"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                    </ul>
+                     
 
                     <!-- Navbar Toggler -->
                     <ul class="navbar-nav toggle">
@@ -289,6 +284,38 @@
         window.onload = function() {
       window.scrollTo(0, 0);
     };
+
+    function loadHTML(file, elementId, callback) {
+  fetch(file)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`Failed to load ${file}: ${response.statusText}`);
+      }
+      return response.text();
+    })
+    .then((data) => {
+      document.getElementById(elementId).innerHTML = data;
+      if (callback) {
+        callback(); // Run the callback after the content is loaded
+      }
+    })
+    .catch((error) => {
+      console.error(`Error loading ${file}:`, error);
+    });
+}
+
+        function getYear() {
+        const currentYear = new Date().getFullYear();
+        const yearElement = document.getElementById("current-year");
+        if (yearElement) {
+            yearElement.textContent = currentYear;
+            console.log(`Current Year Updated: ${currentYear}`);
+        } else {
+            console.error("Element with ID 'current-year' not found.");
+        }
+     }
+
+     loadHTML('footer.html', 'footer', getYear);
      </script>
 
     <!-- jQuery(necessary for all JavaScript plugins) -->

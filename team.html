@@ -463,7 +463,7 @@
             window.scrollTo(0, 0);
         };
 
-        function loadHTML(file, elementId) {
+        function loadHTML(file, elementId, callback) {
   fetch(file)
     .then((response) => {
       if (!response.ok) {
@@ -473,14 +473,28 @@
     })
     .then((data) => {
       document.getElementById(elementId).innerHTML = data;
+      if (callback) {
+        callback(); // Run the callback after the content is loaded
+      }
     })
     .catch((error) => {
       console.error(`Error loading ${file}:`, error);
     });
 }
 
+function getYear() {
+  const currentYear = new Date().getFullYear();
+  const yearElement = document.getElementById("current-year");
+  if (yearElement) {
+    yearElement.textContent = currentYear;
+    console.log(`Current Year Updated: ${currentYear}`);
+  } else {
+    console.error("Element with ID 'current-year' not found.");
+  }
+}
+
 // Load header and footer
-loadHTML('footer.html', 'footer');
+loadHTML('footer.html', 'footer' , getYear);
 
         let bodyFont = window.getComputedStyle(document.body).fontFamily;
         console.log(bodyFont);
