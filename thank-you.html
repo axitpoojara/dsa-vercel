@@ -269,11 +269,6 @@ var sc_project=12853171;
 var sc_invisible=1; 
 var sc_security="b8794860";
  
-
-  window.onload = function() {
-      window.scrollTo(0, 0);
-    };
-
     function loadHTML(file, elementId, callback) {
   fetch(file)
     .then((response) => {
@@ -297,6 +292,7 @@ var sc_security="b8794860";
 
 // Load header and footer
 loadHTML('footer.html', 'footer' , getYear);
+loadHTML('topNavbar.html', 'navbar' , getYear);
 </script>
 <script type="text/javascript"
 src="https://www.statcounter.com/counter/counter.js"
