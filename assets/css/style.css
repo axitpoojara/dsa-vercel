@@ -3580,6 +3580,10 @@ hr {
     color:#007684 !important;
 }
 
+.left_margin {
+    margin-left: 0px !important;
+}
+
 
 /*Team Page CSS Start*/
 .responsive-cell-block {
