@@ -268,3 +268,7 @@ function getYear() {
         console.error("Element with ID 'current-year' not found.");
     }
 }
+
+window.onload = function () {
+    window.scrollTo(0, 0);
+};
